@@ -16,6 +16,13 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead{
             background-color: gray;
             color: white;
@@ -28,10 +35,11 @@
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>TABELA GRANTE</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>populacão</th>
+                <th scope="col">estado</th>
+                <th scope="col">populacão</th>
             </tr>
         </thead>
         <tbody>
@@ -50,7 +58,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td class="num"><strong>84 352 783</strong></td>
             </tr>
         </tfoot>
